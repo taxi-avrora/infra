@@ -1,0 +1,46 @@
+.button {
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    background: #00cc00;
+}
+
+.button_size_s {
+    padding: 0.5em 1em;
+}
+
+.button_size_m {
+    font-size: 1.2em;
+    padding: 0.8em 1.8em;
+}
+
+.button_theme_whatsapp {
+    color: #000;
+    background: #00e676;
+}
+
+.button_theme_viber {
+    color: #000;
+    background: #7a509c;
+}
+
+.button_theme_telegram {
+    color: #000;
+    background: #2aa1d4;
+}
+
+/* FontAwesome */
+.button__fa {
+    display: inline;
+
+    min-width: 20px;
+    min-height: 20px;
+
+    margin-right: 10px;
+
+    color: #fff;
+}

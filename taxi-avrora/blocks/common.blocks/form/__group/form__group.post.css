@@ -1,0 +1,22 @@
+block(form) {
+    /* Отдельная группа */
+    elem(group) {
+        margin-bottom: 20px;
+    }
+
+    /* Заголовок группы */
+    elem(group-title) {
+        font-size: var(--size-typo-l);
+
+        margin-bottom: 4px;
+    }
+
+    /* Контент группы */
+    elem(group-content) {
+        display: flex;
+
+        elem(item) {
+            margin-bottom: 0;
+        }
+    }
+}

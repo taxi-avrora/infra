@@ -1,0 +1,6 @@
+.pt-card__image {
+	position: relative;
+	img {
+		width: 100%;
+	}
+}

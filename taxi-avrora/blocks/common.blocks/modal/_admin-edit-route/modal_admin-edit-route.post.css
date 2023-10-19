@@ -1,0 +1,11 @@
+block(modal).mod(admin-edit-route) {
+    /* Короткое описание */
+    block(textarea).mod(name textPreview) {
+        height: 100px;
+    }
+
+    /* Подробное описание */
+    block(textarea).mod(name text) {
+        height: 300px;
+    }
+}

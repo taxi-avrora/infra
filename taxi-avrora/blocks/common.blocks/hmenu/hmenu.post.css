@@ -1,0 +1,49 @@
+block(hmenu) {
+    display: flex;
+
+    margin: var(--space-l) 0;
+
+    elem(item) {
+        font-size: var(--size-typo-xl);
+        font-weight: 400;
+        font-variant: all-small-caps;
+        line-height: var(--line-height-typo-l);
+
+        margin-left: 32px;
+
+        white-space: nowrap;
+        text-decoration: none;
+
+        color: #fff;
+
+        &::after {
+
+            position: relative;
+            top: 1px;
+
+            display: block;
+
+            width: 0;
+            height: 1px;
+
+            margin: 0 auto;
+            content: '';
+
+            transition: width .2s;
+
+            background: #ffdb4d;
+        }
+
+        mod(hovered) {
+            &::after {
+                width: 20px;
+            }
+        }
+
+        mod(selected) {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

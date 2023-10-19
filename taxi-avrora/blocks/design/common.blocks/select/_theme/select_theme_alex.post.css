@@ -1,0 +1,107 @@
+block(select).mod(theme alex) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    max-width: 100%;
+
+    vertical-align: bottom;
+
+    elem(button) {
+        width: 100%;
+
+        text-align: left;
+        vertical-align: top;
+
+        border-radius: 5px;
+
+        &::before {
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+
+            border-radius: 4px;
+        }
+
+        block(button).elem(text) {
+            display: block;
+
+            white-space: normal;
+
+            &:empty {
+                &::before {
+                    content: '\00a0';
+                }
+            }
+        }
+    }
+
+    mod(size s) {
+        block(button).elem(text) {
+            max-height: 24px;
+
+            padding-right: 22px;
+        }
+
+        block(icon) {
+            width: 25px;
+        }
+    }
+
+    mod(size m) {
+        block(button).elem(text) {
+            max-height: 28px;
+
+            padding-right: 25px;
+        }
+
+        block(icon) {
+            width: 31px;
+        }
+    }
+
+    mod(size l) {
+        block(button).elem(text) {
+            max-height: 32px;
+
+            padding-right: 29px;
+        }
+
+        block(icon) {
+            width: 35px;
+        }
+    }
+
+    mod(size xl) {
+        block(button).elem(text) {
+            max-height: 38px;
+
+            padding-right: 33px;
+        }
+
+        block(icon) {
+            width: 39px;
+        }
+    }
+
+    elem(tick) {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        transition: transform .1s ease-out;
+
+        background-image: url(../../theme/_alex/arrow.svg);
+    }
+
+    mod(size s) elem(tick) {
+        background-image: url(../../theme/_alex/arrow-s.svg);
+    }
+
+    mod(opened) elem(tick) {
+        transform: rotate(-180deg);
+    }
+
+    mod(width available) {
+        width: 100%;
+    }
+}

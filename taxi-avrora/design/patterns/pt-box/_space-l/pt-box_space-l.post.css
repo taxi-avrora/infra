@@ -1,0 +1,25 @@
+block(pt-box) {
+    mod(space-l xs) {
+        padding-left: var(--space-xs);
+    }
+
+    mod(space-l s) {
+        padding-left: var(--space-s);
+    }
+
+    mod(space-l m) {
+        padding-left: var(--space-m);
+    }
+
+    mod(space-l l) {
+        padding-left: var(--space-l);
+    }
+
+    mod(space-l xl) {
+        padding-left: var(--space-xl);
+    }
+
+    mod(space-l xxl) {
+        padding-left: var(--space-xxl);
+    }
+}

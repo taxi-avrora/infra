@@ -1,0 +1,18 @@
+block(modal).mod(admin-edit-news) {
+    /* Столбцы */
+    elem(columns) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: var(--space-l);
+    }
+
+    /* Короткое описание */
+    block(textarea).mod(name textPreview) {
+        height: 150px;
+    }
+
+    /* Подробное описание */
+    block(textarea).mod(name text) {
+        height: 330px;
+    }
+}

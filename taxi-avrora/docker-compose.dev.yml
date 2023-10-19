@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  db:
+    image: mongo
+    restart: always
+    volumes:
+      - data_db:/data/db
+    env_file:
+      - .env.local
+
+  website:
+    image: node:8-alpine
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - ./.env.local:/app/.env
+    env_file:
+      - .env.local
+    ports:
+      - 3000:3000
+    command: npm run dev
+
+volumes:
+  data_db:

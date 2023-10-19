@@ -1,0 +1,52 @@
+.class {
+    display: flex;
+    text-align: center;
+}
+
+.class__item {
+    padding: 1em;
+    background: #fff;
+    transition: all 0.4s;
+}
+.class__item_hovered {
+    background: #f2f4f6;
+}
+.class__item:first-child {
+    margin-left: 0;
+}
+
+.class__photo {
+    width: 200px;
+    height: 140px;
+    position: relative;
+}
+
+.class__title {
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+}
+
+.class__bag {
+    font-size: 1.2em;
+}
+.class__place {
+    font-size: 1.2em;
+}
+.class__caption {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.class__button .button {
+    margin: 1em auto 0;
+    background: #fff;
+    border: 2px solid #00cc00;
+    bottom: 0;
+}
+
+.class__item_hovered .button {
+    background: #00cc00;
+}

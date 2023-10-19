@@ -1,0 +1,84 @@
+block(textarea).mod(theme alex) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    display: inline-block;
+    box-sizing: border-box;
+
+    min-height: 2em;
+
+    margin: 0;
+    padding: 0;
+
+    border: 2px solid var(--color-border);
+    outline: none;
+
+    background: #fff;
+
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+        border-color: var(--color-border-control);
+    }
+
+    &::-webkit-input-placeholder {
+        text-indent: 0;
+        color: #999;
+    }
+
+    &::-moz-placeholder {
+        opacity: 1;
+        color: #999;
+    }
+
+    mod(focused) {
+        border-color: var(--color-brand);
+
+        &:hover {
+            border-color: var(--color-brand);
+        }
+    }
+
+    mod(width available) {
+        width: 100%;
+
+        resize: vertical;
+    }
+
+    mod(disabled) {
+        resize: none;
+        cursor: default;
+
+        color: rgba(0, 0, 0, .4);
+        border-color: transparent;
+        background: rgba(0, 0, 0, .08);
+    }
+
+    mod(size s) {
+        font-size: 13px;
+        line-height: 16px;
+
+        padding-left: 6px;
+    }
+
+    mod(size m) {
+        font-size: 13px;
+        line-height: 18px;
+
+        padding: 3px 5px;
+    }
+
+    mod(size l) {
+        font-size: 15px;
+        line-height: 20px;
+
+        padding: 5px 7px;
+    }
+
+    mod(size xl) {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding-left: 11px;
+    }
+}

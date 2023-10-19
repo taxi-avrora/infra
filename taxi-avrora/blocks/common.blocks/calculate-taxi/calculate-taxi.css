@@ -1,0 +1,194 @@
+/* #00cc00 */
+
+.calculate-taxi {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1em;
+  color: #00cc00;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+.calculate-taxi__title {
+  margin: 0 auto 1em 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calculate-taxi__message {
+	height: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+	overflow: hidden;
+	transition: height .2s;
+}
+.calculate-taxi__message_visible {
+	height: auto;
+	padding: 4em 0;
+}
+
+.calculate-taxi__item {
+	margin-top: 4px;
+}
+.calculate-taxi__item:first-child {
+	margin-top: 0;
+}
+
+.calculate-taxi .input {
+	border-radius: 2px;
+}
+.calculate-taxi .input:before {
+	border-radius: 2px;
+}
+.calculate-taxi .input_error .input__control {
+	background: #ff9e9e;
+}
+.calculate-taxi__class,
+.calculate-taxi__typeOrder {
+	overflow: auto;
+	display: flex;
+}
+
+.calculate-taxi__class .button,
+.calculate-taxi__typeOrder .button {
+	width: 100%;
+	font-weight: normal;
+}
+.calculate-taxi .button_theme_islands.button_focused-hard.button:before {
+  box-shadow: 0 0 0 1px #39e639, inset 0 0 0 1px #39e639;
+}
+.calculate-taxi .input_theme_islands.input_focused:before {
+  box-shadow: 0 0 0 1px #39e639, inset 0 0 0 1px #39e639;
+}
+.calculate-taxi .textarea_theme_islands.textarea_focused {
+	 border-color: #39e639;
+  box-shadow: 0 0 0 1px #39e639;
+}
+
+.calculate-taxi__typeOrder .radio {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+.calculate-taxi__class .radio {
+	width: 25%;
+	margin: 0;
+	padding: 0;
+}
+.calculate-taxi .radio.radio_type_button .radio__control {
+	display: none;
+}
+.calculate-taxi__typeOrder .button_theme_islands.button_size_xl .button__text,
+.calculate-taxi__class .button_theme_islands.button_size_xl .button__text {
+	margin: 0 auto;
+}
+.calculate-taxi__typeOrder .button_theme_islands.button_checked,
+.calculate-taxi__class .button_theme_islands.button_checked {
+  background: rgba(0, 0, 0, 0.2);
+}
+.calculate-taxi__typeOrder .button_theme_islands.button_checked:before,
+.calculate-taxi__class .button_theme_islands.button_checked:before {
+	background: #00cc00;
+}
+
+/* checkbox */
+.calculate-taxi .checkbox_theme_islands {
+	margin: 0;
+	padding: 0;
+}
+.calculate-taxi .checkbox_theme_islands.checkbox_checked .checkbox__box:before {
+	background: #67e667;
+}
+.calculate-taxi .checkbox_theme_islands.checkbox_focused .checkbox__box:before {
+  box-shadow: 0 0 0 1px #39e639, inset 0 0 0 1px #39e639;
+}
+.calculate-taxi .checkbox_theme_islands.checkbox_size_l .checkbox__box {
+	width: 30px;
+	height: 30px;
+}
+.calculate-taxi .checkbox_theme_islands.checkbox_size_l .checkbox__text {
+	position: relative;
+	top: -6px;
+	color: #fff;
+}
+.calculate-taxi .checkbox_theme_islands.checkbox_size_l .checkbox__box:after {
+	width: 20px;
+	height: 20px;
+}
+.calculate-taxi .checkbox_theme_islands .checkbox__box:after {
+  top: 4px;
+  left: 5px;
+}
+
+/* textarea */
+.calculate-taxi .textarea_theme_islands {
+	background: #fff;
+}
+.calculate-taxi .textarea_theme_islands.textarea_size_xl {
+  height: 70px;
+  max-height: 70px;
+  border-radius: 2px;
+}
+
+/* order */
+.calculate-taxi__order {
+	display: flex;
+	justify-content: space-between;
+}
+.calculate-taxi__order .input {
+	width: 70%;
+	margin-right: 8px;
+}
+.calculate-taxi__order .button {
+	width: 30%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.calculate-taxi__order .button:before {
+	background: #00cc00;
+}
+
+.calculate-taxi__price {
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+}
+.calculate-taxi__price span {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #00cc00;
+}
+
+
+/* date-time */
+.calculate-taxi__datetime {
+	display: none;
+	justify-content: space-between;
+}
+.calculate-taxi__datetime_visible {
+	display: flex;
+}
+.calculate-taxi__datetime .input_type_date {
+	width: 60%;
+	margin-right: 4px;
+}
+.calculate-taxi__datetime .input_type_time {
+	width: 40%;
+}
+.calculate-taxi__datetime .input_type_time .input__control {
+	text-align: center;
+}
+
+.calculate-taxi .select_theme_islands .button {
+	font-weight: normal;
+}
+
+/* form */
+.calculate-taxi .form-group {
+	margin: 4px 0 0 0;
+}

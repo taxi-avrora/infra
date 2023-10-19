@@ -1,0 +1,33 @@
+block(default-404) {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(/backgrounds/background-page-admin-auth.jpg);
+
+    align-items: center;
+    justify-content: center;
+
+    /* Бокс */
+    elem(box) {
+        max-width: 400px;
+
+        padding: var(--space-xl);
+
+        background: #fff;
+    }
+
+    /* Код */
+    elem(code) {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    /* Кнопка */
+    elem(button) {
+        margin-top: var(--space-xl);
+
+        text-align: center;
+    }
+}

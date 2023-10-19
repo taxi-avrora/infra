@@ -1,0 +1,15 @@
+.footer {
+  background: #000;
+  padding: 8px 0;
+  margin-top: 2em;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer__item span {
+	color: #00cc00;
+}

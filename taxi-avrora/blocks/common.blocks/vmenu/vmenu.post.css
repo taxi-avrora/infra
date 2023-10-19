@@ -1,0 +1,60 @@
+block(vmenu) {
+    /* Пункт */
+    elem(item) {
+        font-size: 16px;
+
+        display: flex;
+
+        padding: var(--space-xs) var(--space-l);
+
+        transition: background .2s;
+
+        text-decoration: none;
+
+        border-left: 2px solid transparent;
+
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            background: #ffeba0;
+
+            elem(ico) {
+                color: #000;
+            }
+        }
+
+        mod(selected) {
+            cursor: default;
+
+            border-color: #666;
+            background: #ffeba0;
+
+            elem(ico) {
+                color: #000;
+            }
+        }
+    }
+
+    /* Левая часть */
+    elem(left) {
+        display: flex;
+
+        align-items: center;
+    }
+
+    /* Иконка */
+    elem(ico) {
+        width: 20px;
+        min-width: 20px;
+        max-width: 20px;
+
+        height: 18px;
+
+        margin-right: var(--space-xs);
+
+        transition: color .2s;
+
+        color: var(--color-border-control);
+    }
+}
