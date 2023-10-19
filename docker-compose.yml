@@ -1,5 +1,13 @@
 version: "3.3"
 services:
+  db:
+    image: mongo
+    restart: always
+    volumes:
+      - data_db:/data/db
+    env_file:
+      - ./taxi-avrora/.env
+
   reverse-proxy:
     image: traefik:v2.10
     ports:
@@ -30,19 +38,8 @@ services:
       dockerfile: Dockerfile
     restart: always
     working_dir: /app
-    environment:
-      - PORT=3100
-      - NODE_ENV="production"
-      - SESSION_SECRET="BLA_BLA_BLA"
-      - VK_CLIENT_ID=6447852
-      - VK_CLIENT_SECRET="64D3T3CyifuXjwao3sHf"
-      - VK_SERVICE_KEY=
-        "7a04c2047a04c2047a04c204407a66a0e877a047a04c20420d577c17bed4f12bedd7916"
-      - MAIL_PASSWORD="86r5bq53g7sM"
-      - MONGODB_URL="mongodb://localhost/taxi-avrora"
-      - TELEGRAM_NOTIFICATION_BOT_TOKEN=
-        "6265759260:AAGxQ1ODoSxUqRYIes5u1Yo6PUrJ2Owk_RQ"
-      - TELEGRAM_CHATS="460948825,290649024"
+    env_file:
+      - ./taxi-avrora/.env
     labels:
       - traefik.enable=true
       - traefik.http.routers.taxi-avrora.entrypoints=web-secure
@@ -51,3 +48,6 @@ services:
       - traefik.http.routers.taxi-avrora.tls.certresolver=letsEncryptStaging
       - traefik.http.routers.taxi-avrora.service=taxi-avrora
       - traefik.http.services.taxi-avrora.loadbalancer.server.port=4173
+
+volumes:
+  data_db:
