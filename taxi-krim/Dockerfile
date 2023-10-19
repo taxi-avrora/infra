@@ -10,6 +10,7 @@ RUN apk update \
 # Устанавливаем все зависимости, в том числе и dev-зависимости, которые нужны для сборки
 ENV NODE_ENV=development
 COPY package*.json ./
+RUN apk add git
 RUN npm ci
 
 # Собираем образ для production
