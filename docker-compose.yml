@@ -35,6 +35,8 @@ services:
       - traefik.http.routers.traefik.service=api@internal
 
   taxi-avrora:
+    depends_on:
+      - db
     build:
       context: ./taxi-avrora
       dockerfile: Dockerfile
