@@ -1,0 +1,33 @@
+.tabs {
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+.tabs__header {
+	display: flex;
+}
+
+.tabs__tab {
+	padding: 0.5em 1em;
+	margin-left: 0.5em;
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+
+	text-decoration: none;
+	color: #000;
+}
+.tabs__tab:first-child {
+	margin-left: 0;
+}
+.tabs__tab_selected {
+	color: #000;
+	cursor: default;
+	border-bottom: 2px solid #ff9966;
+	z-index: 3;
+}
+
+.tabs__content {
+	padding: 1em 0;
+	position: relative;
+	z-index: 2;
+}

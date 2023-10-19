@@ -1,0 +1,97 @@
+@media (min-width: 768px) {
+    /* header */
+    .header {
+        height: 550px;
+    }
+    .header__content {
+        width: 95%;
+        justify-content: space-between;
+    }
+    .header__info {
+        width: auto;
+        margin-right: 1em;
+    }
+
+    .header .calculate-taxi {
+        display: block;
+        min-width: 360px;
+    }
+
+    /* wrapper */
+    .wrapper {
+        width: 95%;
+        padding: 2.5%;
+    }
+
+    /* buttons */
+    .button_theme_islands.button_size_xl {
+        font-size: 15px !important;
+    }
+
+    /* checkbox */
+    .checkbox_theme_islands.checkbox_size_l {
+        font-size: 14px !important;
+    }
+
+    /* mobile-calculate */
+    .page__mobile-calculate {
+        display: none;
+    }
+
+    /* class */
+    .class {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .class__item {
+        box-sizing: border-box;
+        width: calc(50% - 0.5em);
+        border-top: 0;
+    }
+    .class__item:nth-child(3),
+    .class__item:nth-child(4) {
+        border-top: 1px solid #ccc;
+    }
+
+    /* widgets */
+    .widgets__item_type_vk {
+        float: left;
+    }
+    .widgets__item_type_instagram {
+        float: right;
+    }
+
+    /* columns */
+    .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .columns__item {
+        width: calc(50% - 0.5em);
+    }
+    .columns__item:nth-child(2) {
+        width: 100%;
+        order: 1;
+    }
+
+    /* tabs */
+    .tabs__header {
+        justify-content: flex-start;
+    }
+    .tabs__tab {
+        font-size: 15px;
+    }
+
+    /* footer */
+    .footer__wrapper {
+        flex-direction: row;
+    }
+    .footer__item {
+        margin: 0;
+    }
+    .footer__item:nth-child(2) {
+        order: 0;
+    }
+}

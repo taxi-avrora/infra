@@ -1,0 +1,6 @@
+block(modal).mod(admin-edit-faq) {
+    /* Ответ */
+    block(textarea).mod(name answer) {
+        height: 300px;
+    }
+}

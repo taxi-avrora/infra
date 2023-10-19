@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
+
+body,
+html {
+    height: auto;
+}
+
+.page {
+    font: 13px 'Ubuntu', Helvetica, Arial, sans-serif;
+
+    min-height: 100%;
+
+    margin: 0;
+
+    color: #000;
+    background: #fff;
+}
+
+.page__mobile-calculate {
+    background: #f2f4f6;
+}
+
+.page__mobile-calculate .calculate-taxi__message {
+    color: #000;
+}
+
+.page__about {
+    text-align: center;
+}
+
+.page__about-head {
+    margin: 0 auto 1em;
+}
+
+.page__about-advantages {
+    margin: 4em 0 2em;
+}
+
+.page__about-end {
+    margin: 1em auto;
+}
+
+.page__price-head {
+    margin: 0 auto;
+}
+
+.page__widgets {
+    margin-top: 6em;
+}

@@ -1,0 +1,139 @@
+block(modal).mod(theme alex) {
+    display: none;
+    visibility: hidden;
+
+    margin: -9999px 0 0 -9999px; /* to prevent clickability and visiblity of internal elements with visiblity: visible */
+    background: rgba(0, 0, 0, .5);
+
+    &,
+    elem(content) {
+        animation-duration: .2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    elem(content) {
+        min-width: 300px;
+
+        margin: 5px;
+
+        background-color: #fff;
+    }
+
+    /* Заголовок окна */
+    elem(title) {
+        display: flex;
+
+        background: var(--color-brand);
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Текст заголовка */
+    elem(title-text) {
+        color: #000;
+    }
+
+    /* Кнопка закрытия окна */
+    elem(close) {
+        transition: opacity .2s;
+        opacity: .5;
+
+        border-radius: 50%;
+
+        background: #fff;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+
+    elem(body) {
+        border: 1px solid var(--color-ghost);
+        border-top: 0;
+    }
+
+    mod(js inited) {
+        display: block;
+    }
+
+    mod(has-animation) {
+        animation-name: modal;
+
+        elem(content) {
+            animation-name: modal__content;
+        }
+    }
+
+    mod(visible) {
+        visibility: visible;
+
+        margin: 0;
+
+        &.mod(has-animation) {
+            animation-name: modal_visible;
+
+            elem(content) {
+                animation-name: modal_visible__content;
+            }
+        }
+    }
+}
+
+/* closing modal */
+@keyframes modal {
+    0% {
+        visibility: visible;
+
+        margin: 0;
+
+        opacity: 1;
+    }
+
+    99% {
+        margin: 0;
+    }
+
+    100% {
+        visibility: hidden;
+
+        margin: -9999px 0 0 -9999px;
+
+        opacity: 0;
+    }
+}
+
+/* opening modal */
+@keyframes modal_visible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* closing modal__content */
+@keyframes modal__content {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* opening modal__content */
+@keyframes modal_visible__content {
+    0% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

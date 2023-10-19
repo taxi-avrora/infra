@@ -1,0 +1,124 @@
+@media (min-width: 320px) {
+
+    /* header */
+    .header {
+        height: auto;
+        padding: 16px 0;
+    }
+    .header__content {
+        width: 95%;
+    }
+    .header__info {
+        width: 100%;
+    }
+    .header__title {
+        line-height: 30px;
+    }
+    .header__title span {
+        line-height: 40px;
+    }
+    .header__subtitle {
+        font-weight: bold !important;
+    }
+    .header .calculate-taxi {
+        display: none;
+    }
+
+    /* wrapper */
+    .wrapper {
+        width: 95%;
+    }
+
+    /* buttons */
+    .button_theme_islands.button_size_xl {
+        font-size: 14px !important;
+    }
+
+    .calculate-taxi__submit .button__text {
+        font-weight: normal !important;
+        margin: 0 auto !important;
+    }
+
+    /* checkbox */
+    .checkbox_theme_islands.checkbox_size_l {
+        font-size: 13px !important;
+    }
+
+    /* mobile calculate */
+    .page__mobile-calculate {
+        display: block;
+        padding: 2.5%;
+    }
+    .page__mobile-calculate .calculate-taxi {
+        padding: 0;
+        color: #000;
+        border-radius: 0;
+        background: transparent;
+    }
+    .page__mobile-calculate .calculate-taxi__price {
+        color: #000;
+    }
+    .page__mobile-calculate .calculate-taxi .checkbox__text {
+        color: #000 !important;
+    }
+
+    /* tabs */
+    .tabs__header {
+        justify-content: center;
+    }
+    .tabs__tab {
+        font-size: 14px;
+    }
+
+    /* class */
+    .class {
+        flex-direction: column;
+    }
+    .class__item {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1em 0 0;
+        border-top: 1px solid #ccc;
+    }
+    .class__item:first-child {
+        border-top: 0;
+    }
+
+    .widgets {
+        display: block;
+
+        height: 760px;
+    }
+
+    /* columns */
+    .columns {
+        flex-direction: column;
+    }
+    .columns__item {
+        width: 100%;
+        margin: 0 1em;
+    }
+
+    /* textarea */
+    .calculate-taxi .textarea_theme_islands.textarea_size_xl {
+        font-size: 14px;
+    }
+
+    /* inputs */
+    .calculate-taxi .input_theme_islands.input_size_xl {
+        font-size: 14px;
+    }
+
+    /* footer */
+    .footer__wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__item {
+        margin-top: 0.5em;
+    }
+    .footer__item:nth-child(2) {
+        margin-top: 0;
+        order: -1;
+    }
+}

@@ -51,5 +51,22 @@ services:
       - traefik.http.routers.taxi-avrora.service=taxi-avrora
       - traefik.http.services.taxi-avrora.loadbalancer.server.port=3100
 
+  taxi-krim:
+    build:
+      context: ./taxi-krim
+      dockerfile: Dockerfile
+    restart: always
+    working_dir: /app
+    env_file:
+      - ./taxi-krim/.env
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.taxi-krim.entrypoints=web-secure
+      - traefik.http.routers.taxi-krim.rule=Host(`krim.taxi-krim82.ru`)
+      - traefik.http.routers.taxi-krim.tls=true
+      - traefik.http.routers.taxi-krim.tls.certresolver=letsEncryptStaging
+      - traefik.http.routers.taxi-krim.service=taxi-krim
+      - traefik.http.services.taxi-krim.loadbalancer.server.port=3200
+
 volumes:
   data_db:

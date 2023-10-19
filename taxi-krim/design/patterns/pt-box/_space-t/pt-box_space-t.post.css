@@ -1,0 +1,25 @@
+block(pt-box) {
+    mod(space-t xs) {
+        padding-top: var(--space-xs);
+    }
+
+    mod(space-t s) {
+        padding-top: var(--space-s);
+    }
+
+    mod(space-t m) {
+        padding-top: var(--space-m);
+    }
+
+    mod(space-t l) {
+        padding-top: var(--space-l);
+    }
+
+    mod(space-t xl) {
+        padding-top: var(--space-xl);
+    }
+
+    mod(space-t xll) {
+        padding-top: var(--space-xll);
+    }
+}

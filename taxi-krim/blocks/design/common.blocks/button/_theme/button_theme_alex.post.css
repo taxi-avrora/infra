@@ -1,0 +1,306 @@
+$color-brand-shadow: hsl(48, 100%, 40%);
+$color-brand-hover: hsl(48, 100%, 70%);
+$color-brand-active: hsl(48, 100%, 55%);
+
+block(button).mod(theme alex) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 0;
+
+    user-select: none;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #000;
+
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+
+    background: var(--color-border);
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &::-moz-focus-inner {
+        padding: 0;
+
+        border: 0;
+    }
+
+    elem(text) {
+        position: relative;
+
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+
+        text-overflow: ellipsis;
+    }
+
+    block(icon) {
+        position: relative;
+    }
+
+    /* Брэнд */
+    mod(color brand) {
+        background: var(--color-brand);
+
+        &::before {
+            background: var(--color-brand);
+        }
+
+        &:hover {
+            background: $color-brand-hover;
+
+            &::before {
+                background: $color-brand-hover;
+            }
+        }
+
+        &:active {
+            background: $color-brand-active;
+
+            &::before {
+                background: $color-brand-active;
+            }
+        }
+    }
+
+    mod(shadow brand) {
+        border: 0;
+
+        box-shadow: 0 2px 0 0 $color-brand-shadow;
+    }
+
+    mod(type link) {
+        text-decoration: none;
+    }
+
+    /* Decorative element (inner background) */
+    &::before {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+
+        content: '';
+
+        border-radius: 2px;
+        background: var(--color-default);
+    }
+
+    mod(hovered) {
+        cursor: pointer;
+
+        background: var(--color-border-control);
+    }
+
+    mod(pressed) {
+        background: var(--color-brand);
+    }
+
+    mod(checked) {
+        background: rgba(153, 122, 0, .5);
+
+        &::before {
+            background: #ffeba0;
+        }
+
+        mod(pressed) {
+            background: rgba(129, 103, 0, .6);
+
+            &::before {
+                background: #fee481;
+            }
+        }
+
+        mod(hovered) {
+            background: rgba(129, 103, 0, .6);
+        }
+    }
+
+    mod(view plain) {
+        background: none;
+
+        mod(pressed) {
+            background: #f6f5f3;
+        }
+
+        mod(checked) {
+            background: #ffeba0;
+
+            mod(pressed) {
+                background: #fee481;
+            }
+        }
+
+        mod(disabled) {
+            background: none;
+        }
+    }
+
+    mod(view action) {
+        background: #ffdb4d;
+
+        &::before {
+            display: none;
+        }
+
+        mod(hovered) {
+            background: #ffd633;
+        }
+
+        mod(pressed) {
+            background: #fc0;
+        }
+
+        mod(focused-hard) {
+            animation: button-action-focus .5s infinite linear alternate;
+
+            box-shadow: none;
+        }
+    }
+
+    mod(view pseudo) {
+        overflow: hidden;
+
+        background: none;
+
+        &::before {
+            background: none;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+        }
+
+        mod(hovered) {
+            &::before {
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, .3);
+            }
+        }
+
+        mod(pressed) {
+            &::before {
+                background: rgba(0, 0, 0, .05);
+            }
+        }
+
+        mod(checked) {
+            &::before {
+                background: #ffeba0;
+                box-shadow: 0 0 0 1px rgba(153, 122, 0, .5);
+            }
+
+            mod(hovered) {
+                &::before {
+                    box-shadow: 0 0 0 1px rgba(129, 103, 0, .6);
+                }
+            }
+
+            mod(pressed) {
+                &::before {
+                    background: #fee481;
+                    box-shadow: 0 0 0 1px rgba(129, 103, 0, .6);
+                }
+            }
+        }
+    }
+
+    mod(disabled) {
+        background: rgba(0, 0, 0, .08);
+
+        &::before {
+            display: none;
+        }
+
+        mod(checked) {
+            background: rgba(0, 0, 0, .15);
+        }
+
+        block(button).elem(text) {
+            color: #767676;
+        }
+
+        block(icon) {
+            opacity: .3;
+        }
+    }
+
+    mod(size s) {
+        font-size: 13px;
+        line-height: 24px;
+
+        block(icon) {
+            width: 24px;
+        }
+
+        block(button).elem(text) {
+            margin: 0 10px;
+        }
+    }
+
+    mod(size m) {
+        font-size: 13px;
+        line-height: 28px;
+
+        block(icon) {
+            width: 28px;
+        }
+
+        block(button).elem(text) {
+            margin: 0 13px;
+        }
+    }
+
+    mod(size l) {
+        font-size: 15px;
+        line-height: 32px;
+
+        block(icon) {
+            width: 32px;
+        }
+
+        block(button).elem(text) {
+            margin: 0 15px;
+        }
+    }
+
+    mod(size xl) {
+        font-size: 18px;
+        line-height: 38px;
+
+        block(icon) {
+            width: 38px;
+        }
+
+        block(button).elem(text) {
+            margin: 0 18px;
+        }
+    }
+
+    & block(icon)+block(button).elem(text) {
+        margin-left: 0;
+    }
+
+    elem(text):not(:last-child) {
+        margin-right: 0;
+    }
+
+    block(vector) {
+        position: relative;
+    }
+}
+
+@keyframes button-action-focus {
+    from {
+        background-color: #ffdb4d;
+    }
+
+    to {
+        background-color: #fc0;
+    }
+}

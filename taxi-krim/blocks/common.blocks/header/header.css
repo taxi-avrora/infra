@@ -1,0 +1,137 @@
+.header {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 10s;
+    transform: scale(1.2);
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.header__image_loaded {
+    transform: scale(1);
+}
+
+.header__shadow {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.header__info {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+.header__logotype {
+    width: 100px;
+    height: 86px;
+    margin: 0 auto;
+/*     animation-name: logotype_move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    background-image: url(/ico/logotype.png);
+    background-size: cover;
+}
+
+.header__title {
+    font-size: 3em;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 0;
+    color: #fff;
+}
+
+.header__title span {
+    color: #ff9966;
+}
+
+.header__subtitle {
+    font-size: 1.4em;
+    font-weight: 100;
+    margin: 0.5em auto 0 auto;
+    color: #fff;
+}
+
+.header__subtitle span {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00cc00;
+}
+
+.header__button {
+    margin: 3em auto 0;
+}
+.header__button {
+    color: #fff !important;
+}
+
+.header .calculate-taxi {
+    position: relative;
+    z-index: 3;
+    height: auto;
+}
+
+/* Номера телефонов */
+.header__phones {
+    margin-top: 16px;
+}
+
+/* Социальные кнопки */
+.header__social-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header__social-buttons .button {
+    margin-top: 16px;
+    margin-right: 16px;
+}
+.header__social-buttons .button:last-child {
+    margin-right: 0;
+}
+
+/* ANIMATION */
+/* @keyframes logotype_move {
+    from {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    to {
+        transform: rotate(4deg);
+    }
+} */

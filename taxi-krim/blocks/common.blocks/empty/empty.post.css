@@ -1,0 +1,31 @@
+block(empty) {
+    display: none;
+
+    width: 100%;
+
+    padding: 40px;
+
+    text-align: center;
+
+    /* Иконка */
+    elem(ico) {
+
+        font-size: 50px;
+        min-height: 57px;
+
+        color: #555;
+    }
+
+    /* Надпись */
+    elem(caption) {
+        font-size: 32px;
+        font-weight: 200;
+
+        color: #555;
+        font-variant-caps: all-small-caps;
+    }
+
+    mod(visible) {
+        display: block;
+    }
+}

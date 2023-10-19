@@ -1,0 +1,34 @@
+block(attaches) {
+    display: flex;
+
+    /* Метка */
+    elem(label) {
+        display: inline-block;
+
+        border: 2px solid var(--color-border);
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            border-color: var(--color-border-control);
+        }
+
+        &:focus {
+            border-color: var(--color-brand);
+        }
+
+        mod(hidden) {
+            display: none;
+        }
+    }
+
+    /* Контрол */
+    elem(control) {
+        display: none;
+    }
+
+    /* Прикрепленные файлы */
+    elem(files) {
+        display: flex;
+    }
+}

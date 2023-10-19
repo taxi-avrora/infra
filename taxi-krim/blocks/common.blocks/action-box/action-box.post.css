@@ -1,0 +1,56 @@
+block(action-box) {
+    position: relative;
+    left: 0;
+
+    /* Действия */
+    elem(actions) {
+        display: flex;
+        height: 24px;
+        margin-bottom: 10px;
+        justify-content: flex-end;
+    }
+
+    /* Отдельное действие */
+    elem(action) {
+        font-variant: all-small-caps;
+        margin-left: 8px;
+        padding: 0 8px 5px;
+        transition: all .2s;
+        color: #666;
+        border-radius: 2px;
+
+        &:hover {
+            cursor: pointer;
+            color: #000;
+
+            background: #ffdb4b;
+        }
+
+        mod(selected) {
+            color: #000;
+            background: var(--color-brand);
+        }
+    }
+
+    /* Контент */
+    elem(content) {
+        overflow: hidden;
+    }
+
+    /* Кнопки в попапе подтверждения удаления */
+    elem(popup-remove-buttons) {
+        text-align: right;
+    }
+
+    /* Вложенный */
+    mod(view sub) {
+        padding: var(--space-l);
+
+        border: 1px dashed #ccc;
+
+        &:hover {
+            border-style: solid;
+            background: #f2f4f6;
+        }
+    }
+}

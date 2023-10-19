@@ -1,0 +1,7 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.wrapper.page__tabs {
+	margin-top: 2em;
+}

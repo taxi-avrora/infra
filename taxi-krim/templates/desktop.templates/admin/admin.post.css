@@ -1,0 +1,109 @@
+block(admin) {
+    position: absolute;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    background: #eee;
+
+    /* Шапка */
+    elem(header) {
+        font-size: 20px;
+
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+
+        display: flex;
+
+        width: calc(100% - 40px);
+        height: 60px;
+
+        padding: 0 20px;
+
+        color: #fff;
+        background: #000;
+
+        align-items: center;
+    }
+
+    /* Заголовок */
+    elem(title) {
+        font-size: 40px;
+        line-height: 60px;
+
+        position: relative;
+        top: -4px;
+    }
+
+    /* Тело */
+    elem(body) {
+        margin-top: 60px;
+    }
+
+    /* Сайдбар */
+    elem(sidebar) {
+        position: fixed;
+        top: 60px;
+        left: 0;
+
+        width: 20%;
+        height: calc(100vh - 60px);
+    }
+
+    /* Вернуться на сайт */
+    elem(back) {
+        font-size: 16px;
+
+        position: absolute;
+        bottom: 0;
+
+        display: flex;
+        width: calc(100% - 16px);
+
+        padding: 8px;
+
+        transition: opacity .2s;
+
+        text-align: center;
+        text-decoration: none;
+
+        opacity: .5;
+
+        border-top: 1px solid #eee;
+        font-variant-caps: all-small-caps;
+
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            opacity: 1;
+
+            background: #eee;
+        }
+    }
+
+    /* Иконка кнопки назад */
+    elem(back-ico) {
+        min-width: 18px;
+
+        margin-right: var(--space-xs);
+
+        color: #000;
+    }
+
+    /* Меню */
+    elem(menu) {
+        padding: 20px 0;
+    }
+
+    /* Контент */
+    elem(content) {
+        width: calc(80% - 40px);
+
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-left: calc(20% + 20px);
+    }
+}

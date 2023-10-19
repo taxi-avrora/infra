@@ -1,0 +1,21 @@
+block(pt-content-sidebar) {
+    display: flex;
+
+    justify-content: space-between;
+
+    /* Контент */
+    elem(content) {
+        width: calc(75% - var(--space-m));
+
+        margin-right: var(--space-m);
+
+        flex-shrink: 0;
+    }
+
+    /* Сайдбар */
+    elem(sidebar) {
+        max-width: 25%;
+
+        flex-grow: 1;
+    }
+}

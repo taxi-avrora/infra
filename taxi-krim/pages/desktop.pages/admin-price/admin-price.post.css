@@ -1,0 +1,10 @@
+block(admin-price) {
+    /* Цены */
+    elem(prices) {
+        display: none;
+
+        mod(visible) {
+            display: block;
+        }
+    }
+}

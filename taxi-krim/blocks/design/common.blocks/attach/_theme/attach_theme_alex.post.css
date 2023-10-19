@@ -1,0 +1,86 @@
+block(attach).mod(theme alex) {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    display: inline-block;
+
+    white-space: nowrap;
+
+    elem(control) {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        cursor: pointer;
+
+        opacity: 0;
+    }
+
+    elem(file),
+    elem(no-file) {
+        display: inline;
+
+        margin-left: .4em;
+    }
+
+    elem(clear) {
+        display: inline-block;
+
+        margin-left: .4em;
+
+        cursor: pointer;
+        transition: opacity .1s ease-out;
+        vertical-align: middle;
+
+        opacity: .3;
+        background: center no-repeat;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    mod(disabled) {
+        elem(file),
+        elem(no-file) {
+            opacity: .6;
+        }
+    }
+
+    mod(size s) { font-size: 13px; }
+    mod(size m) { font-size: 13px; }
+    mod(size l) { font-size: 15px; }
+    mod(size xl) { font-size: 18px; }
+
+    mod(size s) elem(clear),
+    mod(size m) elem(clear) {
+        width: 10px;
+        height: 14px;
+
+        background-image: url(../../theme/_alex/clear_size_s.svg);
+    }
+
+    mod(size l) elem(clear),
+    mod(size xl) elem(clear) {
+        width: 14px;
+        height: 14px;
+
+        background-image: url(../../theme/_alex/clear_size_l.svg);
+    }
+
+    block(button) {
+        position: relative;
+
+        elem(text) {
+            z-index: 1;
+
+            display: inline;
+        }
+    }
+}

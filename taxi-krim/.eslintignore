@@ -1,0 +1,8 @@
+**/*.deps.js
+*bundles/**
+static
+
+# Внешние библиотеки
+blocks/common.blocks/jquery/__mask/jquery.maskedinput.min.js
+blocks/common.blocks/jquery/__touchSwipe/jquery.touchSwipe.min.js
+blocks/common.blocks/ya-maps/ya-maps.js

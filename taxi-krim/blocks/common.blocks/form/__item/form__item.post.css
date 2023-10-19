@@ -1,0 +1,15 @@
+block(form) {
+    /* Отдельное поле */
+    elem(item) {
+        margin-bottom: 20px;
+    }
+
+    /* Заголовок поля */
+    elem(item-title) {
+        font-size: var(--size-typo-m);
+
+        margin-bottom: 4px;
+
+        font-variant-caps: all-small-caps;
+    }
+}

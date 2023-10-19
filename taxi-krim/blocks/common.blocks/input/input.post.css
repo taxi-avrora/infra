@@ -1,0 +1,12 @@
+/* TODO: bad CSS */
+block(input) {
+    mod(type hidden) {
+        display: none;
+    }
+
+    mod(error) {
+        &::before {
+            box-shadow: 0 0 0 1px var(--color-alert), inset 0 0 0 1px var(--color-alert) !important;
+        }
+    }
+}
