@@ -47,7 +47,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.taxi-avrora.entrypoints=web-secure
-      - traefik.http.routers.taxi-avrora.rule=Host(`avrora.taxi-krim82.ru`)
+      - traefik.http.routers.taxi-avrora.rule=Host(`taxi-avrora-krim.ru`)
       - traefik.http.routers.taxi-avrora.tls=true
       - traefik.http.routers.taxi-avrora.tls.certresolver=letsEncryptStaging
       - traefik.http.routers.taxi-avrora.service=taxi-avrora
