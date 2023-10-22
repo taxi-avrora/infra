@@ -49,7 +49,7 @@ services:
       - traefik.http.routers.taxi-avrora.entrypoints=web-secure
       - traefik.http.routers.taxi-avrora.rule=Host(`taxi-avrora-krim.ru`)
       - traefik.http.routers.taxi-avrora.tls=true
-      - traefik.http.routers.taxi-avrora.tls.certresolver=letsEncryptStaging
+      - traefik.http.routers.taxi-avrora.tls.certresolver=letsEncrypt
       - traefik.http.routers.taxi-avrora.service=taxi-avrora
       - traefik.http.services.taxi-avrora.loadbalancer.server.port=3100
 
