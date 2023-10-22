@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04e15461.css",
+    "main.js": "/static/js/main.6d9a3805.js",
+    "static/js/787.c36382c7.chunk.js": "/static/js/787.c36382c7.chunk.js",
+    "static/media/hose.png": "/static/media/hose.63df81c64dc82538b3db.png",
+    "static/media/hookahdrawing.png": "/static/media/hookahdrawing.f4c5f8287d78b89c75c0.png",
+    "static/media/sebero.png": "/static/media/sebero.73222a99ea2865aad0dc.png",
+    "static/media/venom.webp": "/static/media/venom.a51796b0092c45429dc8.webp",
+    "static/media/coal.png": "/static/media/coal.147573142cbf1a6eb64d.png",
+    "static/media/chashi.png": "/static/media/chashi.95a2507e29494bb7057d.png",
+    "static/media/musthave.png": "/static/media/musthave.33ba18a12ee7aaa6ce12.png",
+    "static/media/spectrum.png": "/static/media/spectrum.285ac4aa820228e2981a.png",
+    "static/media/brusko.png": "/static/media/brusko.ab39372fc23d739a024d.png",
+    "static/media/starline.png": "/static/media/starline.b9fb2c43e9ab01f7e5f2.png",
+    "static/media/clean.png": "/static/media/clean.117dc1a5a19b348cc543.png",
+    "static/media/kolba.png": "/static/media/kolba.611bb098b27dcf24aa3c.png",
+    "static/media/darkside.png": "/static/media/darkside.b1848aa50c56468cbbab.png",
+    "static/media/tumankalyan.png": "/static/media/tumankalyan.5aab795cb0487e1f3e70.png",
+    "static/media/endorphin.png": "/static/media/endorphin.66466c8878e1200264c6.png",
+    "static/media/shahta.webp": "/static/media/shahta.e965c608996c448361af.webp",
+    "index.html": "/index.html",
+    "main.04e15461.css.map": "/static/css/main.04e15461.css.map",
+    "main.6d9a3805.js.map": "/static/js/main.6d9a3805.js.map",
+    "787.c36382c7.chunk.js.map": "/static/js/787.c36382c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04e15461.css",
+    "static/js/main.6d9a3805.js"
+  ]
+}
