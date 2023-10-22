@@ -81,7 +81,7 @@ services:
       - traefik.http.routers.tuman-kalyan.rule=Host(`tuman-kalyan.ru`)
       - traefik.http.routers.tuman-kalyan.entrypoints=web-secure
       - traefik.http.routers.tuman-kalyan.tls=true
-      - traefik.http.routers.tuman-kalyan.tls.certresolver=letsEncryptStaging
+      - traefik.http.routers.tuman-kalyan.tls.certresolver=letsEncrypt
       - traefik.http.services.tuman-kalyan.loadbalancer.server.port=80
 
 volumes:
