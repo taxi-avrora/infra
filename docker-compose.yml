@@ -65,7 +65,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.http.routers.taxi-krim.entrypoints=web-secure
-      - traefik.http.routers.taxi-krim.rule=Host(`taxi-krim82.ru`) || Host(`taxi-krim.ru.com`)
+      - traefik.http.routers.taxi-krim.rule=Host(`taxi-krim82.ru`)
       - traefik.http.routers.taxi-krim.tls=true
       - traefik.http.routers.taxi-krim.tls.certresolver=letsEncrypt
       - traefik.http.routers.taxi-krim.service=taxi-krim

@@ -3,7 +3,7 @@ module.exports = {
     defaultPort: 3200,
     cacheTTL: 31000,
     sessionSecret: process.env.SESSION_SECRET,
-    mongodb: "mongodb://localhost/taxi-krim_ru_com",
+    mongodb: process.env.MONGODB_URL,
     env: {
         env: process.env.NODE_ENV,
     },
